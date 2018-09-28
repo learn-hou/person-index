@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	    <script type="text/javascript" src="js/jquery.min.js" ></script>
+	<!--   <script type="text/javascript" src="js/two.min.js" ></script>-->
+	    <link rel="stylesheet" href="css/animate.css" />
+	    <link rel="stylesheet" href="css/jquery.fullPage.css" />
+	    <script type="text/javascript" src="js/jquery.fullPage.js" ></script>
+  <link rel="stylesheet" href="css/style.css" />
+	    <link rel="stylesheet" href="css/bootstrap.min.css" />
+	 <!--   <link href="//netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">-->
+	 	<link href="http://apps.bdimg.com/libs/fontawesome/4.4.0/css/font-awesome.min.css" rel="stylesheet" />
+	<style>
+		html,body{
+			margin: 0;
+			padding: 0;
+			border: none;
+			height: 100%;
+			width: 100%;
+		}
+		.main_page{
+			height: 100%;
+			min-height: 100%;
+			width: 100%;
+			position: relative;
+			overflow: hidden;
+			background: url(img/section1.jpg)  no-repeat center center;
+			/*background: url(img/banner2.png)  no-repeat center center;	
+			background: url(img/banner.png)  no-repeat center center;*/			
+			background-size: cover ;
+			/*animation: bganim  9s linear infinite;
+	-webkit-animation: bganim 9s linear infinite;
+	transition: all;
+	-webkit-transition: all;*/
+		}
+		
+		@-webkit-keyframes bganim {
+  0% {
+    background: url(img/section1.jpg)  no-repeat center center;
+    background-size: cover ;
+  }
+
+   50% {
+   background: url(img/3.jpg)  no-repeat center center;
+   background-size: cover ;
+  }
+
+  100% {
+    background: url(img/banner3.png)  no-repeat center center;
+    background-size: cover ;	
+  }
+}
+
+@keyframes bganim {
+  0% {
+    background: url(img/section1.jpg)  no-repeat center center;
+    background-size: cover ;	
+  }
+
+   50% {
+   background: url(img/3.jpg)  no-repeat center center;
+   background-size: cover ;	
+  }
+
+  100% {
+    background: url(img/banner3.png)  no-repeat center center;	
+    background-size: cover ;
+  }
+}
+		.btn {
+    display: inline-block;
+    padding: 40px;
+    margin-bottom: 0;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.42857143;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-image: none;
+    border: 1px solid transparent;
+    /* border-radius: 4px; */
+}
+.btn-default{
+	border-radius: 0;
+	background: transparent;
+	border: 1px solid #FFFFFF;
+	color: #FFFFFF;
+}
+.btn-default:hover{
+	border-radius: 0;
+	background: transparent;
+	border: 1px solid #C9302C;
+	color: #C9302C;
+}
+  #slide1{
+		background: url(img/3.jpg) no-repeat;
+		background-size: cover ;
+		
+	}
+	#slide2{
+		background: url(img/4.jpg) no-repeat ;
+		background-size: cover ;
+	
+	}
+        #slide3{
+            background: url(img/section3.jpg) no-repeat ;
+            background-size: cover ;
+
+        }
+
+		.thumbnail  img{
+			height:250px;
+		}
+        #main{
+            width:100%;
+            height:100%;
+        }
+		.caption a{
+			text-decoration: none;
+			color:red;
+		}
+	</style>
+
+    </head>
+	<body>
+	<section class="main_page" id="main_page">
+		<div class="container" style="top: 40%; position: relative;">
+			<h1 class="slideInRight animated_other">
+				欢迎来到我的个人主页，我是一名前端程序员。
+			</h1>
+	     <p class="slideInLeft animated_other">
+			 前端对于网站来说，通常是指网站的前台部分，包括网站的表现层和结构层。
+			 因此前端技术一般分为前端设计和前端开发，前端设计一般可以理解为网站的视觉设计，
+			 前端开发则是网站的前台代码实现，包括基本的HTML和CSS以及JavaScript/ajax，
+			 以及目前比较高级的CSS3、HTML5和SVG等。
+		 </p>
+		</div>
+	<div id="menu" >
+		<svg class="menu_btn" >
+		<g id="menu_default"  onclick="change()">
+	    <g stroke="#fff"  stroke-width="2" id="menu_close">
+	    <path d='M 20 20 L 40 20 M 20 30 L 50 30 M 20 40 L 40 40'></path>
+	    </g>
+	 
+	    <g stroke="#fff"  stroke-width="2" id="menu_open">
+	    <path d='M 20 20 L 40 40 M 40 20 L 20 40 '></path>
+	    </g>
+	    <rect x="0" y="0" width="80" height="80" stroke="none" class="myrect" fill="rgba(255,255,0,0)"></rect>
+		</g>
+	   </svg>
+	</div>
+	
+
+	<section id="page1">
+		
+			<div id="fullpage">
+	<div class="section " id="section0">
+	
+		<div class="container fadeOutLeft animated_other">
+			<div class="row">
+				<div class="col-sm-4 col-md-4 row1" >
+    <div class="thumbnail" style="border: none; border-radius: 0;">
+      <img src="img/page1_4.jpg" width="100%"   >
+      <div class="caption">
+        <h3>VIVO官网</h3>
+        <p style="color: #8C8C8C;">1600万柔光自拍，为自拍而生 </p>
+        <p><a href="../vivo/index.html" >查看详情</a> </p>
+      </div>
+    </div>
+  </div>
+  
+	<div class="col-sm-4 col-md-4 row2" >
+		<div class="thumbnail" style="border: none; border-radius: 0;">
+
+      <img src="img/page1_6.jpg" width="100%">
+      <div class="caption">
+        <h3>小米官网</h3>
+        <p style="color: #8C8C8C;">一切为发烧而生</p>
+        <p>
+			<a href="../小米商城/index.html" >查看详情</a> </p>
+      </div>
+    </div>
+
+	</div>
+
+				
+				
+	<div class="col-sm-4 col-md-4 row3" >
+    <div class="thumbnail" style="border: none; border-radius: 0;">
+		 <img src="img/page1_7.jpg" width="100%">
+      <div class="caption">
+        <h3>素馨花卉</h3>
+        <p style="color: #8C8C8C;">花卉交流中，花语虽无声胜有声</p>
+		   <p><a href="../素馨花卉/网站首页.html" >查看详情</a> </p>
+      </div>
+    </div>
+  </div>
+			</div>
+		</div>
+	</div>
+	<div class="section" id="section1">
+        <div class="intro fadeOutUpBig animated">
+                <div class="slide" id="slide1">
+                    <h1>又是一年花开放，又是一年毕业季。。。</h1>
+				<p >
+                    我期待着毕业那天我们穿着同样的衣服站在一起，一起玩笑，照着属于我们的毕业照，最后怀念着我们过去在一起的日子。
+					<br/>带着笑一起哭，说姐妹一生。
+                </p>
+				</div>
+		        <div class="slide" id="slide2" >
+                    <h1>&nbsp;&nbsp;&nbsp;自我简介</h1>
+				<p>
+                    &nbsp;&nbsp;&nbsp; 我叫侯金洁，来自山西临汾；
+                    <br/>
+                    &nbsp;&nbsp;&nbsp; 毕业于晋中学院，专业：计算机科学与技术；
+                    <br/>
+                    &nbsp;&nbsp;&nbsp; 我想要从事计算机行业，做一个前端技术人员，熟悉各种前端技术；
+                    <br/>
+                    &nbsp;&nbsp;&nbsp; 我的性格是比较慢热的那种，在学校参加过各种社团活动，团结友爱；
+                </p>
+				</div>
+                <div class="slide" id="slide3" >
+
+                <div id="main">
+
+                </div>
+            </div>
+				<div>
+                </div>
+
+        </div>
+    </div>
+	<div class="section" id="section2">
+		<div class="intro fadeOutUpBig animated">
+			
+			<div class="container ">
+			<div class="row">
+				<div class="col-sm-6 col-md-6 section2_cell_left" >
+    <div class="thumbnail" style="border: none; border-radius: 0; padding: 0;">
+        <a href="../天气ajax/index.html"> <img src="img/page1_7.png" width="100%"></a>
+     
+    </div>
+  </div>
+  
+	<div class="col-sm-6 col-md-6 section2_cell_right" >
+    <div class="thumbnail" style="border: none; border-radius: 0; text-align: left; background: transparent;">
+   
+      <div class="caption">
+        <h3 style="color: #FFFFFF;">最美天气App介绍</h3>
+        <p style="color: #FFFFFF;text-align: left;">
+        	
+        	1）主界面可以看到当地的大概天气情况；
+            2）下拉页面，可查看今日的24小时天气、空气质量、天气详情以及近几天的温度曲线图。
+            3）在下拉页面，可查看某个城市的未来16天的天气介绍，包括最高温、最低温。
+            4）页面底部是一些服务指南，带伞、感冒、驾车、穿衣等服务介绍。
+            5）点击顶部城市弹出搜索界面，界面下边罗列中国的每个省会，省会下介绍每个城市。
+            6）点击城市可以跳到首页，出现点击的城市的各种气温介绍。
+            7）在搜索框中可以搜索城市，同样也可以出现搜索的城市气温。
+        	
+        	
+        </p>
+      <p style="margin-top: 15px;">
+      	<a href="#" class="btn btn-default" role="button" style="margin-right: 5px;">
+      		<i class="fa fa-group fa-2x" ></i>
+      	</a> 
+      	<a href="#" class="btn btn-default" role="button" style="margin-right: 5px;">
+      		<i class="fa fa-wechat fa-2x" ></i>
+      	</a>
+      	<a href="#" class="btn btn-default" role="button" style="margin-right: 5px;">
+      		
+      		<i class="fa fa-weibo fa-2x" ></i>
+      	</a> 
+      	<a href="#" class="btn btn-default" role="button" style="margin-right: 5px;">
+      		
+      		<i class="fa fa-qq fa-2x" ></i>
+      	</a>
+      </p>
+      </div>
+    </div>
+  </div>
+            </div>
+		</div>
+        </div>
+	</div>
+	
+	
+	<div class="section" id="section4">
+	    
+			<div class="intro fadeOutUpBig animated">
+				<h1>至理名言</h1>
+				<p>
+                    人生的路，总是深一脚，浅一脚，悲伤在路上，希望也在路上；
+                    <br/>
+                    生活的味总是苦一阵，甜一阵，疲惫在心里，欢乐也在心里。
+                    <br/>
+                    人生无常，人心善变。内心宁静才能够处世不惊；
+                    <br/>
+                    足够淡定才不会患得患失。清清浅浅人生路，简简单单随缘行。
+                    <br/>
+                    平和于心态，充实于生活。人间三千事，淡然一笑间。
+
+				</p>
+				
+			</div>
+    </div>
+            </div>
+    </section>
+	</section>
+		<script type="text/javascript">
+		$(document).ready(function() {
+			$('#fullpage').fullpage({
+				
+				navigation: true,
+				css3:true,
+				navigationPosition: 'right',
+				navigationTooltips: ['Products', 'Introduce', 'Introduce','Introduce'],
+			afterLoad: function(anchorLink, index){
+		var loadedSection = $(this);
+		//using index
+		if(index == 1){
+		
+			$('#section0 .container').addClass('fadeInLeft');
+			$('#section0 .container').removeClass('fadeOutLeft');
+			
+		}
+		if(index == 2){
+			$('#section1 .intro').removeClass('fadeOutUpBig ');
+			$('#section1 .intro').addClass('fadeInUpBig');
+		}
+      if(index == 3){
+			$('#section2 .intro').removeClass('fadeOutUpBig ');
+			$('#section2 .intro').addClass('fadeInUpBig');
+			$('.section2_cell_left').addClass('slideInLeft animated');
+			$('.section2_cell_right').addClass('slideInRight animated');
+		}
+      if(index == 4){
+			$('#section4 .intro').removeClass('fadeOutUpBig ');
+			$('#section4 .intro').addClass('fadeInUpBig');
+		}
+
+},
+			onLeave: function(index, nextIndex, direction){
+		//using index
+		if(index == 1){
+			
+			$('#section0 .container').addClass('fadeOutLeft');
+			$('#section0 .container').removeClass('fadeInLeft');
+		}
+		if(index == 2){
+			$('#section1 .intro').addClass('fadeOutUpBig ');
+			$('#section1 .intro').removeClass('fadeInUpBig');
+		}
+       if(index == 3){
+			$('#section2 .intro').addClass('fadeOutUpBig ');
+			$('#section2 .intro').removeClass('fadeInUpBig');
+			$('.section2_cell_left').removeClass('slideInLeft animated');
+			$('.section2_cell_right').removeClass('slideInRight animated');
+		}
+       if(index == 4){
+			$('#section4 .intro').addClass('fadeOutUpBig ');
+			$('#section4 .intro').removeClass('fadeInUpBig');
+		}
+
+	}
+			
+			});
+		});
+	</script>
+    <script src="js/echarts.common.min.js"></script>
+	<script>
+ var isClick="true";
+  function change(){
+	var ss=document.getElementById('menu_default');
+	var close=document.getElementById('menu_close');
+	var open=document.getElementById('menu_open');
+	var page1=document.getElementById('page1');
+	if(isClick==="true")
+	{
+	    close.setAttribute('class','fadeOut animated');			
+		 setTimeout(function(){
+			open.setAttribute('class','fadeIn animated');
+			 page1.setAttribute('class','fadeInUpBig animated');
+			  $('#fp-nav').removeClass('fadeOut');
+			 $('#fp-nav').addClass('fadeIn animated');
+			 $('#main_page h1').addClass('slideOutRight');
+			 $('#main_page h1').removeClass('slideInRight');
+			 $('#main_page p').addClass('slideOutLeft');
+			 $('#main_page p').removeClass('slideInLeft');
+
+		},500);
+        
+		isClick="false";
+		
+		}
+	else if(isClick==="false"){
+	
+		open.setAttribute('class','fadeOut animated');	
+		setTimeout(function(){
+			close.setAttribute('class','fadeIn animated');
+			page1.setAttribute('class','fadeOutDownBig animated');
+			 $('#fp-nav').removeClass('fadeIn');
+			 $('#fp-nav').addClass('fadeOut animated');
+			 $('#main_page h1').removeClass('slideOutRight');
+			 $('#main_page h1').addClass('slideInRight');
+			 $('#main_page p').removeClass('slideOutLeft');
+			 $('#main_page p').addClass('slideInLeft');
+		},500);
+	
+		isClick="true";	
+	}
+      //  饼状图
+      let  myChart = echarts.init(document.getElementById('main'));
+      console.log(myChart);
+      let  option = {
+          backgroundColor: '#2c343c',
+
+          title: {
+              text: 'Learn Hou',
+              left: 'center',
+              top: 20,
+              textStyle: {
+                  color: '#ccc'
+              }
+          },
+
+          tooltip : {
+              trigger: 'item',
+              formatter: "{a} <br/>{b} : {c} ({d}%)"
+          },
+
+          visualMap: {
+              show: false,
+              min: 80,
+              max: 600,
+              inRange: {
+                  colorLightness: [0, 1]
+              }
+          },
+          series : [
+              {
+                  // name:'访问来源',
+                  type:'pie',
+                  radius : '55%',
+                  center: ['50%', '50%'],
+                  data:[
+                      {value:335, name:'微信小程序'},
+                      {value:310, name:'Jquery'},
+                      {value:274, name:'HTML+CSS3'},
+                      {value:235, name:'PHP后台'},
+                      {value:450, name:'javascript'}
+                  ].sort(function (a, b) { return a.value - b.value; }),
+                  roseType: 'radius',
+                  label: {
+                      normal: {
+                          textStyle: {
+                              color: 'rgba(255, 255, 255, 0.5)'
+                          }
+                      }
+                  },
+                  labelLine: {
+                      normal: {
+                          lineStyle: {
+                              color: 'rgba(255, 0, 255, 0.3)'
+                          },
+                          smooth: 0.2,
+                          length: 10,
+                          length2: 20
+                      }
+                  },
+                  itemStyle: {
+                      normal: {
+                          color: '#c23531',
+                          shadowBlur: 200,
+                          shadowColor: 'rgba(0, 0, 0, 0.5)'
+                      }
+                  },
+
+                  animationType: 'scale',
+                  animationEasing: 'elasticOut',
+                  animationDelay: function (idx) {
+                      return Math.random() * 200;
+                  }
+              }
+          ]
+      };
+      // 使用刚指定的配置项和数据显示图表。
+      myChart.setOption(option);
+
+}
+
+	</script>
+
+    </body>
+</html>
+
